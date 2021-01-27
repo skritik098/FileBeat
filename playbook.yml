@@ -1,0 +1,7 @@
+---
+
+- hosts: filebeat
+  become: yes
+  become_method: sudo
+  roles:
+    - filebeat_install
